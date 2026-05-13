@@ -33,24 +33,14 @@
             this.lblPath = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblPath
-            // 
-            this.lblPath.AutoSize = true;
-            this.lblPath.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
-            this.lblPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.lblPath.Location = new System.Drawing.Point(36, 18);
-            this.lblPath.Name = "lblPath";
-            this.lblPath.Size = new System.Drawing.Size(95, 22);
-            this.lblPath.TabIndex = 6;
-            this.lblPath.Text = "檔案路徑：";
-            // 
             // txtPath
             // 
             this.txtPath.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.txtPath.Location = new System.Drawing.Point(40, 48);
+            this.txtPath.Location = new System.Drawing.Point(45, 58);
+            this.txtPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPath.Name = "txtPath";
             this.txtPath.ReadOnly = true;
-            this.txtPath.Size = new System.Drawing.Size(420, 30);
+            this.txtPath.Size = new System.Drawing.Size(501, 34);
             this.txtPath.TabIndex = 0;
             // 
             // btnBrowse
@@ -60,9 +50,10 @@
             this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBrowse.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
-            this.btnBrowse.Location = new System.Drawing.Point(480, 46);
+            this.btnBrowse.Location = new System.Drawing.Point(567, 58);
+            this.btnBrowse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(100, 34);
+            this.btnBrowse.Size = new System.Drawing.Size(112, 41);
             this.btnBrowse.TabIndex = 1;
             this.btnBrowse.Text = "選擇檔案";
             this.btnBrowse.UseVisualStyleBackColor = false;
@@ -75,9 +66,10 @@
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlay.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
             this.btnPlay.ForeColor = System.Drawing.Color.White;
-            this.btnPlay.Location = new System.Drawing.Point(40, 110);
+            this.btnPlay.Location = new System.Drawing.Point(45, 132);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(110, 40);
+            this.btnPlay.Size = new System.Drawing.Size(141, 48);
             this.btnPlay.TabIndex = 2;
             this.btnPlay.Text = "▶ 播放一次";
             this.btnPlay.UseVisualStyleBackColor = false;
@@ -90,9 +82,10 @@
             this.btnLoop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoop.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
             this.btnLoop.ForeColor = System.Drawing.Color.White;
-            this.btnLoop.Location = new System.Drawing.Point(170, 110);
+            this.btnLoop.Location = new System.Drawing.Point(210, 132);
+            this.btnLoop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLoop.Name = "btnLoop";
-            this.btnLoop.Size = new System.Drawing.Size(110, 40);
+            this.btnLoop.Size = new System.Drawing.Size(141, 48);
             this.btnLoop.TabIndex = 3;
             this.btnLoop.Text = "🔁 重複播放";
             this.btnLoop.UseVisualStyleBackColor = false;
@@ -105,9 +98,10 @@
             this.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStop.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
             this.btnStop.ForeColor = System.Drawing.Color.White;
-            this.btnStop.Location = new System.Drawing.Point(300, 110);
+            this.btnStop.Location = new System.Drawing.Point(376, 132);
+            this.btnStop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(110, 40);
+            this.btnStop.Size = new System.Drawing.Size(141, 48);
             this.btnStop.TabIndex = 4;
             this.btnStop.Text = "⏹ 停止播放";
             this.btnStop.UseVisualStyleBackColor = false;
@@ -120,20 +114,32 @@
             this.btnEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnd.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
             this.btnEnd.ForeColor = System.Drawing.Color.White;
-            this.btnEnd.Location = new System.Drawing.Point(470, 110);
+            this.btnEnd.Location = new System.Drawing.Point(539, 132);
+            this.btnEnd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEnd.Name = "btnEnd";
-            this.btnEnd.Size = new System.Drawing.Size(110, 40);
+            this.btnEnd.Size = new System.Drawing.Size(140, 48);
             this.btnEnd.TabIndex = 5;
             this.btnEnd.Text = "✖ 結束程式";
             this.btnEnd.UseVisualStyleBackColor = false;
             this.btnEnd.Click += new System.EventHandler(this.btnEnd_Click);
             // 
+            // lblPath
+            // 
+            this.lblPath.AutoSize = true;
+            this.lblPath.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold);
+            this.lblPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.lblPath.Location = new System.Drawing.Point(40, 22);
+            this.lblPath.Name = "lblPath";
+            this.lblPath.Size = new System.Drawing.Size(112, 25);
+            this.lblPath.TabIndex = 6;
+            this.lblPath.Text = "檔案路徑：";
+            // 
             // frmWAVPlayer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(620, 190);
+            this.ClientSize = new System.Drawing.Size(781, 233);
             this.Controls.Add(this.lblPath);
             this.Controls.Add(this.btnEnd);
             this.Controls.Add(this.btnStop);
@@ -142,6 +148,7 @@
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.txtPath);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "frmWAVPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -149,6 +156,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmWAVPlayer_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
     }
 }
